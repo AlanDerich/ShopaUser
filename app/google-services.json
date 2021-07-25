@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "718295616696",
+    "project_id": "shopa-3ce4d",
+    "storage_bucket": "shopa-3ce4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718295616696:android:4b1627c9c5ae0ff8b2784d",
+        "android_client_info": {
+          "package_name": "com.derich.shopauser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718295616696-sc7ojtn8tdj2gi553jtq2rikgj3u3uek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.derich.shopauser",
+            "certificate_hash": "b02a53ac78d030f17e3e9e344a86d44940ea96b9"
+          }
+        },
+        {
+          "client_id": "718295616696-t6itfg1i7it48i0agnn7k4jr7b0c78bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuhMXa0mL1QmAVTA0BSe8cfZZKjgHqCOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718295616696-t6itfg1i7it48i0agnn7k4jr7b0c78bj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

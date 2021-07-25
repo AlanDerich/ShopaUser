@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ShopaUser</string>
+    <string name="retry">Retry</string>
+
+    <string name="progress_uploading">Uploading Image…</string>
+    <string name="upload_success">Image Upload finished Successfully! 🚀</string>
+    <string name="upload_failure">Image Uploading failed to upload the image 🚧. Please try to upload the deal again.</string>
+
+    <string name="prompt_already_login">%1$s already signed in!</string>
+    <string name="prompt_failed_to_login">Failed to login. Reason: %1$s</string>
+    <string name="prompt_sign_out">Sign out?</string>
+
+    <string name="prompt_add_image">Add Image</string>
+    <string name="prompt_change_image">Change Image</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_description">Description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="product_image">Product Image</string>
+</resources>

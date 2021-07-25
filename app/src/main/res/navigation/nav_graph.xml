@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.derich.shopauser.ui.home.HomeFragment"
+        android:label="Shopa"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_facilitiesFragment"
+            app:destination="@id/facilitiesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_productsFragment"
+            app:destination="@id/productsFragment">
+            <argument
+                android:name="productFacility"
+                android:defaultValue="jamaa"
+                app:argType="string"
+                app:nullable="true" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/facilitiesFragment"
+        android:name="com.derich.shopauser.ui.facilities.FacilitiesFragment"
+        android:label="FacilitiesFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.derich.shopauser.ui.products.ProductsFragment"
+        android:label="ProductsFragment" >
+        <argument
+            android:name="productFacility"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="jamaa" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.derich.shopauser.ui.productdetails.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" />
+</navigation>
