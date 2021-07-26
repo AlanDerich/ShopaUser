@@ -1,14 +1,19 @@
 package com.derich.shopauser.binding
 
 import android.net.Uri
+import android.text.SpannableString
+import android.text.style.RelativeSizeSpan
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.derich.shopauser.data.Result
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.squareup.picasso.Picasso
+import java.text.DecimalFormat
+import java.text.NumberFormat
+import java.util.*
 
 object BindingAdapters {
 
@@ -71,5 +76,19 @@ object BindingAdapters {
                 .load(uri)
                 .into(imageView)
         }
+    }
+
+    @JvmStatic
+    @BindingAdapter("amount")
+    fun setCurrencyAndAmount(textView: TextView, amount: Double) {
+        val format: NumberFormat = NumberFormat.getCurrencyInstance()
+        format.setMaximumFractionDigits(0)
+        format.setCurrency(Currency.getInstance("KSH"))
+        val spannableString = SpannableString(
+            "KSH" + " " +
+                    DecimalFormat("#.##").format(amount)
+        )
+        spannableString.setSpan(RelativeSizeSpan(0.6f), 0, 1, 0)
+        textView.text = format.format(amount)
     }
 }
